@@ -3,18 +3,18 @@ import java.util.Scanner;
 public class CS_1_5_2 {
     static Scanner scanner;
     public static int dnk(String dnk) {
-        int maxRepetition = 1;
-        int currentRepetition = 1;
+        int max = 1;
+        int current = 1;
 
         for (int i = 1; i < dnk.length(); i++) {
             if (dnk.charAt(i) == dnk.charAt(i - 1)) {
-                currentRepetition++;
-                maxRepetition = currentRepetition;
+                current++;
+                max = current;
             } else {
-                currentRepetition = 1;
+                current = 1;
             }
         }
-        return maxRepetition;
+        return max;
     }
 
     public static void main(String[] args) {
