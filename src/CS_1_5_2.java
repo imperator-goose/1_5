@@ -9,7 +9,7 @@ public class CS_1_5_2 {
         for (int i = 1; i < dnk.length(); i++) {
             if (dnk.charAt(i) == dnk.charAt(i - 1)) {
                 current++;
-                max = current;
+                max = Math.max(max,current);
             } else {
                 current = 1;
             }
